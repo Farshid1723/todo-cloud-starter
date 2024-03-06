@@ -32,8 +32,8 @@ before_script:
 
 # Run some tests
 script:
-  - docker run gravitonian/todo-view-test npm test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
-  - docker run gravitonian/todo-cache-service-test npm test
+  - docker run nfarshid/todo-view-test npm test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
+  - docker run nfarshid/todo-cache-service-test npm test
 
 after_success:
   # Build Production Images for deployment
