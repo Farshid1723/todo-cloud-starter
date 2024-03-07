@@ -31,6 +31,7 @@ before_install:
  - sudo apt-get update
  - sudo apt-get install -y google-chrome-stable xvfb
  - export CHROME_BIN=~/.local/share/flatpak/app/com.google.Chrome/current/active/export/bin/com.google.Chrome
+ - echo $CHROME_BIN
 
 #install:
 
