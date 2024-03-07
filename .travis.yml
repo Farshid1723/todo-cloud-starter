@@ -23,10 +23,11 @@ before_install:
  - sudo mv docker-compose /usr/local/bin
  - docker-compose --version
  - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
- - sudo echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list
  - ls -la /etc/apt/sources.list.d/
- - sudo apt-get update
- - sudo apt-get install -y google-chrome-stable xvfb
+ - sudo su
+ - echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list
+ - apt-get update
+ - apt-get install -y google-chrome-stable xvfb
 
 #install:
 
