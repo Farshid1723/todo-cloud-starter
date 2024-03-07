@@ -30,7 +30,8 @@ before_install:
  - ls -la /etc/apt/sources.list.d/
  - sudo apt-get update
  - sudo apt-get install -y google-chrome-stable xvfb
- - export CHROME_BIN=/opt/google/chrome/google-chrome
+ - sudo apt-get install -y libgbm-dev
+# - export CHROME_BIN=/opt/google/chrome/google-chrome
  - echo $CHROME_BIN
 
 #install:
