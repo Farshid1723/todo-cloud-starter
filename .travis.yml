@@ -45,7 +45,7 @@ before_script:
 
 # Run some tests
 script:
-  - docker run nfarshid/todo-view-test npm test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox -e "CHROME_BIN=/usr/bin/google-chrome"
+  - docker run nfarshid/todo-view-test npm test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox 
   - docker run nfarshid/todo-cache-service-test npm test
 
 after_success:
